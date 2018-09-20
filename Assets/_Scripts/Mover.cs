@@ -13,6 +13,6 @@ public class Mover : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (new Vector3 (0, 0, 0.05f) * 0.05f * Time.deltaTime);
+		transform.Translate (new Vector3 (0, 0, 0.1f) * 0.05f * Time.deltaTime);
 	}
 }
