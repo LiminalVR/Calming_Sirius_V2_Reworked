@@ -5,6 +5,7 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 
 {
+    public float speed = 1.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,6 @@ public class Mover : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate (new Vector3 (0, 0, 1.0f) * 0.05f * Time.deltaTime);
+		transform.Translate (new Vector3 (0, 0, speed) * 0.05f * Time.deltaTime);
 	}
 }
