@@ -46,7 +46,7 @@ public class FadeToBlack : MonoBehaviour
 
     IEnumerator ToBlack()
     {
-        for (float f = 0.0005f; f <= 1; f += 0.0005f)
+        for (float f = 0.001f; f <= 1; f += 0.001f)
         {
             Color c = r.material.color;
             c.a = f;
