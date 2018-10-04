@@ -41,10 +41,12 @@ public class SceneTrigger : MonoBehaviour
 
 
 
-            f2b.CallFadeToBlack();
+            //f2b.CallFadeToBlack();
+
+            //Debug.Log("Calling FADE TO Black");
 
 
-            Invoke("ChangeScene", 2.0f);
+            Invoke("ChangeScene", 10.0f);
 
             //SceneManager.LoadScene("EndScene_Black");
 
