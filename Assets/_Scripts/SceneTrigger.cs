@@ -34,10 +34,10 @@ public class SceneTrigger : MonoBehaviour
 
         //Debug.Log("Before if");
 
-        if (other.gameObject.name == "EGO_FadeOutTrigger")
+        if (other.gameObject.name == "OVRCameraRig")
         {
 
-            //Debug.Log("After if");
+            Debug.Log("After if");
 
 
 
