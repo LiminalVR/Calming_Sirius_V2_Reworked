@@ -7,7 +7,7 @@ public class AudioFadeOut : MonoBehaviour
 
 {
 
-    public int secondsToFadeOut = 5;
+    public int secondsToFadeOut = 10;
 
     public AudioSource music;
 
