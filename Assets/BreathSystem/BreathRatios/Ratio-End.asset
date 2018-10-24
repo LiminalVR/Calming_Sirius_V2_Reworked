@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed5975b6dc238c34fb2c81ef7b191a98, type: 3}
   m_Name: Ratio-End
   m_EditorClassIdentifier: 
-  InhaleDurationInSeconds: 3
-  ExhaleDurationInSeconds: 7
-  PauseDurationInSeconds: 0.6
+  _InhaleDurationInSeconds: 3
+  _ExhaleDurationInSeconds: 7
+  _PauseDurationInSeconds: 0.6

@@ -13,12 +13,12 @@ namespace Liminal.App.Breath
         public Action<BreathState> OnStateChanged;
         public Action<float> OnValueChanged;
 
-        public BreathRatio Ratio;
-        public bool PlayOnAwake;
+        [SerializeField] private BreathRatio _Ratio = null;
+        [SerializeField] private bool _PlayOnAwake;
 
         private void Awake()
         {
-            if (PlayOnAwake)
+            if (_PlayOnAwake)
             {
                 Begin();
             }
@@ -38,7 +38,7 @@ namespace Liminal.App.Breath
 
         public void ChangeRatio(BreathRatio ratio)
         {
-            Ratio = ratio;
+            _Ratio = ratio;
             Stop();
             Begin();
         }
@@ -56,18 +56,18 @@ namespace Liminal.App.Breath
 
         private IEnumerator BreatheIn()
         {
-            yield return Breathe(Ratio.InhaleDurationInSeconds, BreathState.Inhale);
+            yield return Breathe(_Ratio.InhaleDurationSeconds, BreathState.Inhale);
         }
 
         private IEnumerator BreatheOut()
         {
-            yield return Breathe(Ratio.ExhaleDurationInSeconds, BreathState.Exahle);
+            yield return Breathe(_Ratio.ExhaleDurationSeconds, BreathState.Exahle);
         }
 
         private IEnumerator Pause()
         {
             SetState(BreathState.Pause);
-            yield return new WaitForSeconds(Ratio.PauseDurationInSeconds);
+            yield return new WaitForSeconds(_Ratio.PauseDurationSeconds);
         }
 
         private IEnumerator Breathe(float duration, BreathState state)
@@ -83,6 +83,7 @@ namespace Liminal.App.Breath
             SetPositionValue(1, state);
         }
 
+        /// The position is measured from 0 to 1, where 0 to 1 is Inhaling and 1 > 0 is Exhaling
         private void SetPositionValue(float value, BreathState state)
         {
             switch (state)

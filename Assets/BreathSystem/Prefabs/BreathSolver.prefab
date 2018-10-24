@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1388831441d634448a7e6fb9e9b5edb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ratio: {fileID: 11400000, guid: 5202ec9af72d1e447b0becf65ab73e39, type: 2}
+  _Ratio: {fileID: 11400000, guid: 4762158e4e889ba4980df15929ec2b72, type: 2}
+  _PlayOnAwake: 0
 --- !u!114 &114750482143192006
 MonoBehaviour:
   m_ObjectHideFlags: 1
