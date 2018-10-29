@@ -14859,7 +14859,6 @@ GameObject:
   m_Component:
   - component: {fileID: 677251515}
   - component: {fileID: 677251514}
-  - component: {fileID: 677251516}
   - component: {fileID: 677251513}
   - component: {fileID: 677251517}
   m_Layer: 0
@@ -14879,11 +14878,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: e561f941ca573e746965bd98973c9423,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 74e4bff87cc241d47a8cd155acd790f9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 225bf35ea7db3ed41951d27e032e1c7d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -14981,19 +14980,6 @@ Transform:
   m_Father: {fileID: 1034199430}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &677251516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 677251512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b65d133a5aaa63c4b8e239c6d4af7669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingPitch: 1
-  timeToDecrease: 1440
 --- !u!114 &677251517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15005,6 +14991,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5307afdaf4eb58349802fc3b01042353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Target: {fileID: 1660614288}
+  _SwooshAudioSource: {fileID: 677251513}
+  _ActivationRange: 1
 --- !u!1 &688352679
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,16 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Doughnut : MonoBehaviour {
+public class Doughnut : MonoBehaviour
+{
+    [SerializeField] private Transform _Target;
+    [SerializeField] private AudioSource _SwooshAudioSource;
+    [SerializeField] private float _ActivationRange = 1.0F;
+    private void Awake()
+    {
+        _transform = transform;
+    }
 
-	// Use this for initialization
-	void Start () {
-		
+    private void Update ()
+    {
+        _currentDistance = Vector3.Distance(_transform.position, _Target.position);
+
+        if (_currentDistance <= _ActivationRange)
+        {
+            _SwooshAudioSource.Play();
+            this.enabled = false;
+        }
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    private Transform _transform = null;
+    private float _currentDistance = 0;
 }
