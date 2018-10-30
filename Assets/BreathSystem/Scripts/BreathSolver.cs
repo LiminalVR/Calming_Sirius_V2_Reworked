@@ -12,6 +12,7 @@ namespace Liminal.App.Breath
     {
         public Action<BreathState> OnStateChanged;
         public Action<float> OnValueChanged;
+        public Action OnBreathCycleEnd;
 
         [SerializeField] private BreathRatio _Ratio = null;
         [SerializeField] private bool _PlayOnAwake;
@@ -39,8 +40,6 @@ namespace Liminal.App.Breath
         public void ChangeRatio(BreathRatio ratio)
         {
             _Ratio = ratio;
-            Stop();
-            Begin();
         }
 
         private IEnumerator BreatheLoop()
@@ -51,6 +50,7 @@ namespace Liminal.App.Breath
                 yield return Pause();
                 yield return BreatheOut();
                 yield return Pause();
+                OnBreathCycleEnd.InvokeSafe();
             }
         }
 

@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed5975b6dc238c34fb2c81ef7b191a98, type: 3}
-  m_Name: Ratio-Start
+  m_Name: Ratio-1
   m_EditorClassIdentifier: 
-  InhaleDurationInSeconds: 1.8
-  ExhaleDurationInSeconds: 4.2
-  PauseDurationInSeconds: 0.3
+  _InhaleDurationInSeconds: 1.8
+  _ExhaleDurationInSeconds: 4.2
+  _PauseDurationInSeconds: 0.3

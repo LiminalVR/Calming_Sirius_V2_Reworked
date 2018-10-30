@@ -198,7 +198,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 37038570}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.64, z: 0}
+  m_LocalPosition: {x: 0, y: 1.309, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1801912172}
@@ -736,7 +736,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 150
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -4192,7 +4192,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 150
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -7356,7 +7356,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 284696300}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.13, y: 0, z: 0}
+  m_LocalPosition: {x: -2.406, y: 0, z: 1.0259998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1801912172}
@@ -7883,7 +7883,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 150
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -11013,7 +11013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1388831441d634448a7e6fb9e9b5edb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Ratio: {fileID: 11400000, guid: 4762158e4e889ba4980df15929ec2b72, type: 2}
+  _Ratio: {fileID: 11400000, guid: 5202ec9af72d1e447b0becf65ab73e39, type: 2}
   _PlayOnAwake: 1
 --- !u!4 &440080978
 Transform:
@@ -11691,7 +11691,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -14707,7 +14707,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -15176,7 +15176,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 1300945577
+  randomSeed: -1382542778
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -18559,7 +18559,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 807085115}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2.18, y: 0, z: 0}
+  m_LocalPosition: {x: 2.614, y: 0, z: 0.976}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1801912172}
@@ -19086,7 +19086,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 150
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -36716,7 +36716,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -39661,7 +39661,13 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  TotalGameDuration: 180
+  TotalGameDuration: 333
+  BreathSolver: {fileID: 440080977}
+  BreathRatios:
+  - {fileID: 11400000, guid: 5202ec9af72d1e447b0becf65ab73e39, type: 2}
+  - {fileID: 11400000, guid: 213b0ba4b2e4ee0409eb9ab2d89ec02d, type: 2}
+  - {fileID: 11400000, guid: 459e6febfb839b4489ae4afcdba97ce2, type: 2}
+  - {fileID: 11400000, guid: 4762158e4e889ba4980df15929ec2b72, type: 2}
 --- !u!1 &1390370500
 GameObject:
   m_ObjectHideFlags: 0
@@ -47491,7 +47497,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -51168,7 +51174,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 500
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -54197,7 +54203,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1183464278
+  randomSeed: -815042236
   InitialModule:
     serializedVersion: 3
     enabled: 1
