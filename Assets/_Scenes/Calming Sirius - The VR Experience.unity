@@ -14877,7 +14877,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: e561f941ca573e746965bd98973c9423,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 225bf35ea7db3ed41951d27e032e1c7d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
@@ -14916,7 +14916,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -14989,9 +14989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5307afdaf4eb58349802fc3b01042353, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Target: {fileID: 1660614288}
   _SwooshAudioSource: {fileID: 677251513}
-  _ActivationRange: 1
 --- !u!1 &688352679
 GameObject:
   m_ObjectHideFlags: 0
