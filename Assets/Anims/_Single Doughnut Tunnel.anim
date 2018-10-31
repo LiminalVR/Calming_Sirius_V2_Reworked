@@ -19,19 +19,25 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 0, y: 0.5, z: 41.25}
+        value: {x: 0, y: 1.14, z: 41.25}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 50.333332
-        value: {x: 0, y: 0.5, z: -10}
-        inSlope: {x: 0, y: 0, z: -0.9125}
-        outSlope: {x: 0, y: 0, z: -0.9125}
+        time: 52.333332
+        value: {x: 0, y: 1.67, z: -7.95}
+        inSlope: {x: 0, y: 0, z: -0.7296115}
+        outSlope: {x: 0, y: 0, z: -0.7296115}
         tangentMode: 0
       - serializedVersion: 2
-        time: 100
-        value: {x: 0, y: 0, z: -50}
+        time: 71.666664
+        value: {x: 0, y: 1.59, z: -21.022205}
+        inSlope: {x: 0, y: -0.0034532368, z: -0.4767626}
+        outSlope: {x: 0, y: -0.0034532368, z: -0.4767626}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 98.666664
+        value: {x: 0, y: 1.51, z: -30.04}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -62,7 +68,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 100
+    m_StopTime: 98.666664
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -88,13 +94,19 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 50.333332
+        time: 52.333332
         value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 100
+        time: 71.666664
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 98.666664
         value: 0
         inSlope: 0
         outSlope: 0
@@ -111,19 +123,25 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.5
+        value: 1.14
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 50.333332
-        value: 0.5
+        time: 52.333332
+        value: 1.67
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 100
-        value: 0
+        time: 71.666664
+        value: 1.59
+        inSlope: -0.0034532368
+        outSlope: -0.0034532368
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 98.666664
+        value: 1.51
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -144,14 +162,20 @@ AnimationClip:
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 50.333332
-        value: -10
-        inSlope: -0.9125
-        outSlope: -0.9125
+        time: 52.333332
+        value: -7.95
+        inSlope: -0.7296115
+        outSlope: -0.7296115
         tangentMode: 136
       - serializedVersion: 2
-        time: 100
-        value: -50
+        time: 71.666664
+        value: -21.022205
+        inSlope: -0.4767626
+        outSlope: -0.4767626
+        tangentMode: 136
+      - serializedVersion: 2
+        time: 98.666664
+        value: -30.04
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -166,4 +190,11 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 51.333332
+    functionName: PlaySwoosh
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

@@ -37,8 +37,9 @@ Shader "Outlined/Silhouetted Diffuse"
 		float3 norm = mul((float3x3)UNITY_MATRIX_IT_MV, v.normal);
 		float2 offset = TransformViewToProjection(norm.xy);
 
-		o.pos.xy += offset * o.pos.z * _Outline;
+		o.pos.xy += offset * (o.pos.z) * _Outline;
 		o.color = _OutlineColor;
+        
 		return o;
 	}
 	ENDCG
@@ -64,7 +65,7 @@ Shader "Outlined/Silhouetted Diffuse"
 		ColorMask RGB // alpha not used
 
 					  // you can choose what kind of blending mode you want for the outline
-		Blend SrcAlpha OneMinusSrcAlpha // Normal
+		Blend SrcAlpha OneMinusDstColor // Normal
 										//Blend One One // Additive
 										//Blend One OneMinusDstColor // Soft Additive
 										//Blend DstColor Zero // Multiplicative
@@ -116,9 +117,9 @@ Shader "Outlined/Silhouetted Diffuse"
 	{ 
 		"LightMode" = "Always" 
 	}
-		Cull Front
+		
 		ZWrite Off
-		ZTest Always
+		
 		ColorMask RGB
 
 		// you can choose what kind of blending mode you want for the outline
