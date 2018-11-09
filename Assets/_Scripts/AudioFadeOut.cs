@@ -4,24 +4,16 @@ using System.Collections;
 using UnityEngine.Audio;
  
 public class AudioFadeOut : MonoBehaviour
-
 {
-
     public int secondsToFadeOut = 5;
-
     public AudioSource music;
-
 
     private void OnTriggerEnter(Collider other)
     {
-
         if (other.gameObject.name == "EGO_FadeOutTrigger")
         {
-
-            // Call findAudioAndFadeOut Coroutine
             StartCoroutine(findAudioAndFadeOut());
         }
-
     }
 
     IEnumerator findAudioAndFadeOut()
