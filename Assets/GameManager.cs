@@ -47,10 +47,13 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator GameLoop()
     {
+        _startTime = Time.time;
+
         var SpritalMain = SpiralPS.main;
 
         for (float i = 0; i < 1.0F; i += Time.deltaTime / TotalGameDuration)
         {
+            _currentTime = Time.time - _startTime;
             SpritalMain.simulationSpeed = Mathf.Lerp(0.25F, 0.05F, SpiralCurve.Evaluate(i));
             yield return null;
         }
@@ -67,4 +70,6 @@ public class GameManager : MonoBehaviour
 
     private int _breathCount = 0;
     private int _breathRatioIndex = 0;
+    private float _startTime = 0;
+    private float _currentTime = 0;
 }

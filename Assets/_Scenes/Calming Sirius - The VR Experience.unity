@@ -28828,7 +28828,7 @@ Transform:
   m_GameObject: {fileID: 933822987}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 170, y: 170, z: 170}
   m_Children: []
   m_Father: {fileID: 677251515}
   m_RootOrder: 0
@@ -39659,7 +39659,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  TotalGameDuration: 333
+  TotalGameDuration: 280
   BreathSolver: {fileID: 440080977}
   BreathRatios:
   - {fileID: 11400000, guid: 5202ec9af72d1e447b0becf65ab73e39, type: 2}
