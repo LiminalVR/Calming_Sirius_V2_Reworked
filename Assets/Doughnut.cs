@@ -7,7 +7,14 @@ public class Doughnut : MonoBehaviour
     [ContextMenu("Play")]
     public void PlaySwoosh()
     {
-        Debug.Log("Play");
         _SwooshAudioSource.Play();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Player>())
+        {
+            PlaySwoosh();
+        }
     }
 }

@@ -10809,7 +10809,6 @@ GameObject:
   m_Component:
   - component: {fileID: 340312061}
   - component: {fileID: 340312060}
-  - component: {fileID: 340312059}
   m_Layer: 0
   m_Name: EGO_FadeOutTrigger
   m_TagString: Untagged
@@ -10817,18 +10816,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &340312059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 340312058}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0441c9cb5ce85b49857c4e9db186f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.8
 --- !u!65 &340312060
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14859,6 +14846,8 @@ GameObject:
   - component: {fileID: 677251514}
   - component: {fileID: 677251513}
   - component: {fileID: 677251517}
+  - component: {fileID: 677251516}
+  - component: {fileID: 677251518}
   m_Layer: 0
   m_Name: Doughnut
   m_TagString: Untagged
@@ -14978,6 +14967,18 @@ Transform:
   m_Father: {fileID: 1034199430}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &677251516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677251512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 6, z: 4.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &677251517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14990,6 +14991,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _SwooshAudioSource: {fileID: 677251513}
+--- !u!54 &677251518
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 677251512}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &688352679
 GameObject:
   m_ObjectHideFlags: 0
@@ -29003,7 +29019,7 @@ MonoBehaviour:
   m_Script: {fileID: 403216476, guid: 27ea3119a82e0444d88b007908225fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AppData: {fileID: 4900000, guid: 71d444ac95992114897151f2463202a8, type: 3}
+  m_AppData: {fileID: 4900000, guid: 863b6dbd0e3f5ec4aadf02493a364bbb, type: 3}
   m_AssetLookup: {fileID: 0}
   m_RootGameObjects:
   - {fileID: 0}
@@ -46753,6 +46769,67 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1603069436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1603069437}
+  - component: {fileID: 1603069439}
+  - component: {fileID: 1603069438}
+  - component: {fileID: 1603069440}
+  m_Layer: 0
+  m_Name: PlayerCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1603069437
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603069436}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0.16999361}
+  m_Children: []
+  m_Father: {fileID: 2104745375}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1603069438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603069436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1603069439
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603069436}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1603069440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603069436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb414eef9c114d4ba6f5eb2218f0ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1608772720
 GameObject:
   m_ObjectHideFlags: 0
@@ -54201,7 +54278,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -815214835
+  randomSeed: -343547444
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -58068,6 +58145,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2104745375}
+  - component: {fileID: 2104745374}
   m_Layer: 0
   m_Name: EGO_Camera
   m_TagString: Untagged
@@ -58075,6 +58153,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2104745374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2104745373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0441c9cb5ce85b49857c4e9db186f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.8
 --- !u!4 &2104745375
 Transform:
   m_ObjectHideFlags: 0
@@ -58089,6 +58179,7 @@ Transform:
   - {fileID: 478892966}
   - {fileID: 576953124}
   - {fileID: 1801912172}
+  - {fileID: 1603069437}
   m_Father: {fileID: 1034199430}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
