@@ -29003,7 +29003,7 @@ MonoBehaviour:
   m_Script: {fileID: 403216476, guid: 27ea3119a82e0444d88b007908225fdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AppData: {fileID: 4900000, guid: 863b6dbd0e3f5ec4aadf02493a364bbb, type: 3}
+  m_AppData: {fileID: 4900000, guid: 71d444ac95992114897151f2463202a8, type: 3}
   m_AssetLookup: {fileID: 0}
   m_RootGameObjects:
   - {fileID: 0}
@@ -54201,7 +54201,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -815042236
+  randomSeed: -815214835
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -58068,7 +58068,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2104745375}
-  - component: {fileID: 2104745374}
   m_Layer: 0
   m_Name: EGO_Camera
   m_TagString: Untagged
@@ -58076,18 +58075,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2104745374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2104745373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0441c9cb5ce85b49857c4e9db186f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.8
 --- !u!4 &2104745375
 Transform:
   m_ObjectHideFlags: 0
