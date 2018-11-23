@@ -887,7 +887,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 2.5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4330,7 +4330,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 2.5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -7955,7 +7955,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 2.5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -18841,7 +18841,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 2.5
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -28425,8 +28425,8 @@ MeshRenderer:
   m_ReceiveShadows: 0
   m_DynamicOccludee: 0
   m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
   m_Materials:
   - {fileID: 2100000, guid: 662f0a0ea4e746e4994ea65f50c6db11, type: 2}
   m_StaticBatchInfo:
@@ -32119,7 +32119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1206028624
 Transform:
   m_ObjectHideFlags: 0
@@ -57114,7 +57114,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1730803895
 Transform:
   m_ObjectHideFlags: 0
@@ -60654,7 +60654,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1021001528
+  randomSeed: 1661619382
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -63987,7 +63987,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1801912172
 Transform:
   m_ObjectHideFlags: 0
