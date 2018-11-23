@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
+        QualitySettings.pixelLightCount = 0;
         BreathSolver.OnBreathCycleEnd += OnBreathCycleEnd;
         yield return GameLoop();
         yield return Outro();
