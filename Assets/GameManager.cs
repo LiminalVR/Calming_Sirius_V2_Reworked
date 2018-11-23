@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
+        //OVRManager.cpuLevel = 3;
+        //OVRManager.gpuLevel = 3;
+        QualitySettings.pixelLightCount = 0;
+
         BreathSolver.OnBreathCycleEnd += OnBreathCycleEnd;
         yield return GameLoop();
         yield return Outro();
@@ -49,7 +53,7 @@ public class GameManager : MonoBehaviour
         _startTime = Time.time;
 
         var SpritalMain = SpiralPS.main;
-
+        
         for (float i = 0; i < 1.0F; i += Time.deltaTime / TotalGameDuration)
         {
             _currentTime = Time.time - _startTime;
