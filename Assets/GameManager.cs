@@ -17,8 +17,6 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator Start()
     {
-        //OVRManager.cpuLevel = 3;
-        //OVRManager.gpuLevel = 3;
         QualitySettings.pixelLightCount = 0;
 
         BreathSolver.OnBreathCycleEnd += OnBreathCycleEnd;
