@@ -1,33 +1,30 @@
-# Calming_Sirius_V2_Reworked
+## Experience Details
+
+**Experience Name:** Calming Sirius
+
+**Description:** The experience begins in a dark floating space themed environment, filled with particles that float around the user.
+
+**Experience Type:** Calm
+
+**Unity Version Used:** 2017.2.0p4 (64-bit)
 
 
-Using Unity 2018.2.6f1 (64-bit)
 
-Image - 
+## Creator Details
 
-Thank you Image 
-https://nodeschool.io/foyle-valley/
-nodeschool.io
+**Team Name:** MK Studios
 
-Audio - 
+**Team Members:** Benjamin Tissot
 
-Bensound
-Bensound.com
-RELAXING | ROYALTY FREE MUSIC
+**Primary Contact Email:** mkstudiosaustralia@gmail.com
 
-Composer: Benjamin TISSOT (also known as Bensound)
+**Secondary Contact Email:** 
 
-Relaxing meditation royalty free music track suitable for massage or a landscape video. Namaste.
-?You will find an additional 9:11 version in the purchased version.
-FREE Creative Commons License
-You are free to use this music in your multimedia project (online videos(YouTube,...), websites, animations, etc.) as long as you credit Bensound.com, For example: "Music: www.bensound.com" or "Royalty Free Music from Bensound"
 
-No Audiobook
-No Audio Podcast
-No Song Making
-No Music Remix
 
-Image copyright: Damiano Poli - Shutterstock
+## Additional Details
 
-https://www.bensound.com/royalty-free-music/track/relaxing
+**Educational Institutions:** 
+
+**Original Repo:** https://github.com/Matt0076/Calming_Sirius_V2_Reworked
 
