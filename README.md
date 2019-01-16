@@ -26,5 +26,5 @@
 
 **Educational Institutions:** 
 
-**Original Repo:** <https://github.com/Matt0076/Happy_Dance_Liminal>
+**Original Repo:** https://github.com/Matt0076/Calming_Sirius_V2_Reworked
 
