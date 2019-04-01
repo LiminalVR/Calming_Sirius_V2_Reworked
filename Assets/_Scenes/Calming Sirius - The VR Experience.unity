@@ -34347,6 +34347,12 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!20 &826969522 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6264453379145160382, guid: d8b96b5b2e3d99c4697ac63294b33922,
+    type: 3}
+  m_PrefabInstance: {fileID: 5157519476443191278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &890772475
 GameObject:
   m_ObjectHideFlags: 0
@@ -67905,7 +67911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8e51efe96e97d54182c2c5cd838eac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 826969522}
 --- !u!212 &1515091701
 SpriteRenderer:
   m_ObjectHideFlags: 0
