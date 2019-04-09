@@ -14795,9 +14795,11 @@ MonoBehaviour:
   m_Script: {fileID: 403216476, guid: a80148f7c24f27741a9721c40a216ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AppData: {fileID: 0}
+  m_AppData: {fileID: 4900000, guid: 8dc472c2b4ce0354bb597ad88d582a57, type: 3}
   m_AssetLookup: {fileID: 0}
-  m_RootGameObjects: []
+  m_RootGameObjects:
+  - {fileID: 0}
+  - {fileID: 421448056}
   m_FadeIn:
     m_Color: {r: 0, g: 0, b: 0, a: 1}
     m_Duration: 2
